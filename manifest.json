@@ -1,0 +1,26 @@
+{
+  "name": "Remove Google Ads",
+  "description": "When the page is fully loaded, simply click on the extension's button/icon if the page contains content you want to remove...",
+  "homepage_url": "https://github.com/llagerlof/remove-google-ads-chrome-extension",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_title": "Remove Google Ads by Drozerah"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "icons": { 
+    "16": "./src/img/rm-google-ads-icon-16.png",
+    "48": "./src/img/rm-google-ads-icon-48.png",
+   "128": "./src/img/rm-google-ads-icon-128.png" 
+  }
+}
